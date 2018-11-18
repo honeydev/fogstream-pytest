@@ -1,0 +1,4 @@
+
+
+class MailException(Exception):
+    pass

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*$py.class
+fogstreamtest/static/node_modules/*
+fogstreamtest/static/dist
+fogstreamtest/settings.py
+.idea/
