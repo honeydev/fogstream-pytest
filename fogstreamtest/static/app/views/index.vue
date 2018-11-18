@@ -2,7 +2,7 @@
      <div>
      <div class="container">
           <nav>
-               <a href="/admin">Admin Login</a>
+               <a href="/admin">Admin panel</a>
           </nav>
      </div>
      <div class="container" style="margin-top: 20%">

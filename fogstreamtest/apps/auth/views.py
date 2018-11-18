@@ -17,7 +17,7 @@ class LoginView(APIView):
         serializer = LoginSerializer(data=request_data)
         serializer.is_valid()
         if serializer.errors:
-            print(serializer.errors)
+
             return Response({"errors": serializer.errors}, status=status.HTTP_401_UNAUTHORIZED)
 
         return Response(serializer.data, status=status.HTTP_200_OK)

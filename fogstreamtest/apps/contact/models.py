@@ -14,5 +14,4 @@ class ContactMessage(models.Model):
     def create(cls, title, body):
         contact_message = cls(title=title)
         contact_message = cls(body=body)
-        print('contact message', contact_message)
         return contact_message

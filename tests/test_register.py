@@ -20,7 +20,6 @@ class TestRegisterUser(TestCase):
         parsed_response = response.json()
         self.assertTrue(User.objects.filter(email='testuser@email.com').count())
         self.assertEqual('testuser@email.com', parsed_response['email'])
-        print(parsed_response)
 
     def test_password_not_equal_error(self):
 
@@ -32,7 +31,6 @@ class TestRegisterUser(TestCase):
         })
 
         parsed_response = response.json()
-        print(parsed_response)
         self.assertEqual(response.status_code, 401)
         self.assertTrue(
             "Entered passwords is not euqal default not_default" in parsed_response['errors']['non_field_errors']
