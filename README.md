@@ -18,12 +18,12 @@
     
 3. Миграции
     ```bash
-        pytonh3 manage.py migrate
+        python3 manage.py migrate
     ```
     
 4. Создаем суперпользователя
     ```bash
-        pytonh3 manage.py createsuperuser
+        python3 manage.py createsuperuser
     ```
 5. Собираем фронтентд
     ```bash
